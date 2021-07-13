@@ -1,0 +1,17 @@
+<div class="">
+  <div>
+    <h1 class=""><%= @person.name%></h1>
+    <a href= <%= edit_person_path(params[:id]) %> class='more_links' >
+      <h4>Edit</h4>
+    </a>
+  </div>
+</div>
+<br>
+<div class="">
+  <h3>Name: <%= @person.first_name %> <%= @person.last_name%></h3>
+  <h3>Alternate Names: <%= @person.alternate_names %></h3>
+  <<h3>Gender: <%= @person.gender %></h3>
+  <h3>Date of Birth: <%= @person.date_of_birth %>  Location: <%= @person.birth_location %></h3>
+  <h3>Date of Death: <%= @person.date_of_death %>  Location: <%= @person.death_location%></h3>
+  <h3>Marriage Date: <%= @person.marriage_date %>  Location <%= @person.marriage_location %></h3>
+</div>

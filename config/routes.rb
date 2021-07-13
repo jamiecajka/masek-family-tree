@@ -1,3 +1,9 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  resources :people
+  resources :relationships
+  resources :titles
+  resources :facts, except: [:index]
+  resources :home, only: [:index]
+
+  root 'home#index'
 end
