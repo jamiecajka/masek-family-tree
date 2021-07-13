@@ -1,0 +1,8 @@
+<div class="">
+ <div class="">
+   <h3>People</h3>
+ </div>
+  <% @people.each do |p| %>
+    <h4><%= p.first_name %> <%= p.last_name %>: <%= p.date_of_birth%> </h4>
+  <% end %>
+</div>

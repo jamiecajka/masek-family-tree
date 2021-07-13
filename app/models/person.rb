@@ -2,6 +2,7 @@ class Person < ApplicationRecord
   has_many :relationships
   has_many :titles, through: :relationships
   has_many :facts
+  belongs_to :gender
   validates :first_name, presence: true
   validates :last_name, presence: true
   validates :date_of_birth
