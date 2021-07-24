@@ -10,6 +10,101 @@
   </head>
 
   <body>
+    <div class="scroll-to-top"
+   <%= image_tag 'backtotop.png' %>
+ </div>
+ <header>
+ 	<div class="container">
+ 		<p class="brand"><a href="index.html">
+ 		<img alt="" class="img-left" <%= image_tag 'logo.png' %> Masek Family Tree</p>
+ 		<p class="slogan">Searching for Ancestors</p>
+ 	</div>
+ </header>
+<nav>
+	<div class="container"
+		 <ul class="slimmenu"
+				<li><%= link_to 'Home', '#' %>
+			   <ul>
+				  <li> <%= link_to 'Surnames', '#' %></li>
+				  <li><%= link_to 'Search This Site', '#' %></li>
+				  <li><%= link_to 'Addresses', '#' %></li>
+				  <li><%= link_to  'Queries', '#' %></li>
+				  <li><%= link_to 'FAQ', '#' %></li>
+				  <li><%= link_to  'New', '#' %></li>
+				  <li><%= link_to 'Research Tips', '#' %></li>
+				  <li><%= link_to 'Contact', '#' %></li>
+			   </ul>
+			</li>
+			<li><%= link_to 'Cemeteries', '#' %>
+			   <ul>
+				  <li><%= link_to 'Inscriptions', '#' %></li>
+				  <li><%= link_to 'Submitting Names', '#' %> </li>
+			   </ul>
+			</li>
+			<li><%= link_to 'Census', '#' %>
+			   <ul>
+				  <li><%= link_to '1830 Census', '#' %></li>
+				  <li><%= link_to '1840 Census', '#' %></li>
+				  <li><%= link_to '1866 Census', '#' %></li>
+				  <li><%= link_to '1870 Census', '#' %></li>
+			   </ul>
+			</li>
+			<li><%= link_to 'Court', '#' %>
+			   <ul>
+				  <li><%= link_to 'Legal Terms', '#' %></li>
+				  <li><%= link_to 'Adm. Record Books', '#' %></li>
+				  <li><%= link_to 'Deeds', '#' %></li>
+				  <li><%= link_to 'Minutes', '#' %></li>
+				  <li><%= link_to 'Land Patents', '#' %></li>
+				  <li><%= link_to 'Wills', '#' %></li>
+				  <li><%= link_to 'Misc. Records', '#' %></li>
+			   </ul>
+			</li>
+			<li><%= link_to 'Families', '#' %>
+			   <ul>
+				  <li><%= link_to 'Family Sheet', '#' %></li>
+					<li><%= link_to 'Ancestors', '#' %></li>
+					<li><%= link_to 'Photo Gallery', '#' %></li>
+
+			   </ul>
+			</li>
+			<li><%= link_to 'Military', '#' %>
+			   <ul>
+				  <li><%= link_to 'Soldiers', '#' %></li>
+				  <li><%= link_to 'Military Links', '#' %></li>
+				  <li><%= link_to 'Monuments', '#' %></li>
+				  <li><%= link_to 'Order Records', '#' %></li>
+			   </ul>
+			</li>
+			<li><%= link_to 'Vital Records', '#' %>
+			   <ul>
+				  <li><%= link_to 'Births', '#' %></li>
+				  <li><%= link_to 'Deaths', '#' %></li>
+				  <li><%= link_to 'Marriages', '#' %></li>
+				  <li><%= link_to 'Diseases', '#' %></li>
+				  <li><%= link_to 'Order Records', '#' %></li>
+			   </ul>
+			</li>
+			<li><%= link_to 'Towns & Cities', '#' %>
+			   <ul>
+				  <li><%= link_to 'Towns', '#' %></li>
+				  <li><%= link_to 'Businesses', '#' %></li>
+				  <li><%= link_to 'Schools', '#' %></li>
+				  <li><%= link_to 'Churches', '#' %></li>
+			   </ul>
+			</li>
+			<li><%= link_to 'Resources', '#' %>
+			   <ul>
+				  <li><%= link_to 'Bibles', '#' %></li>
+				  <li><%= link_to 'History', '#' %></li>
+					<li><%= link_to 'Our Policies', '#' %></li>
+					<li><%= link_to 'Template Instructions', '#' %></li>
+					<li><%= link_to 'Typography', '#' %></li>
+			   </ul>
+			</li>
+		 </ul>
+   </div>
+   </nav> 
     <%= yield %>
   </body>
 </html>
